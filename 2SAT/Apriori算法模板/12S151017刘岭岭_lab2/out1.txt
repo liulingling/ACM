@@ -1,0 +1,43 @@
+输入文件格式的正则表达式形式
+Input File Format:
+InputFile -> Record '\n' InputFile | empty
+Record -> Good '\t' Record | empty
+Good -> [a-zA-Z1-9]*
+Please Input Inputfile Name: (in1.txt, in.txt)in1.txt 0.1 0.8
+Please Input Sub(range in [0.0-1.0])and Confidence(range in[0.0-1.0]):**********
+frequent Itemsets begin************
+*********begin*********
+***************
+(freshmeat) appeared 183
+(dairy) appeared 177
+(confectionery) appeared 276
+(cannedveg) appeared 303
+(frozenmeal) appeared 302
+(beer) appeared 293
+(fish) appeared 292
+(wine) appeared 287
+(fruitveg) appeared 299
+(softdrink) appeared 184
+(cannedmeat) appeared 204
+***************
+***************
+(confectionery,wine) appeared 144
+(cannedveg,frozenmeal) appeared 173
+(cannedveg,beer) appeared 167
+(frozenmeal,beer) appeared 170
+(fish,fruitveg) appeared 145
+***************
+***************
+(cannedveg,frozenmeal,beer) appeared 146
+***************
+*********end**********
+**********frequent Itemsets end**************
+***********printRules Begin******************
+( cannedveg frozenmeal) ==> ( beer) sub(A=>B):0.146 sub(A):0.173 conf:0.843931
+( cannedveg beer) ==> ( frozenmeal) sub(A=>B):0.146 sub(A):0.167 conf:0.874251
+( frozenmeal beer) ==> ( cannedveg) sub(A=>B):0.146 sub(A):0.17 conf:0.858824
+***********printRules end*******************
+Load File Cost: 47ms
+Apriori Cost:31ms
+total Cost:78ms
+请按任意键继续. . .

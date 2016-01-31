@@ -1,0 +1,39 @@
+输入文件格式的正则表达式形式
+Input File Format:
+InputFile -> Record '\n' InputFile | empty
+Record -> Good '\t' Record | empty
+Good -> [a-zA-Z1-9]*
+Please Input Inputfile Name: (in1.txt, in.txt)in.txt
+Please Input Sub(range in [0.0-1.0])and Confidence(range in[0.0-1.0]):0.2 0.8
+**********frequent Itemsets begin************
+*********begin*********
+***************
+(I1) appeared 6
+(I2) appeared 8
+(I5) appeared 3
+(I4) appeared 4
+(I3) appeared 5
+***************
+***************
+(I1,I2) appeared 5
+(I1,I5) appeared 2
+(I1,I3) appeared 3
+(I2,I5) appeared 3
+(I2,I4) appeared 3
+(I2,I3) appeared 3
+(I4,I3) appeared 2
+***************
+***************
+(I1,I2,I5) appeared 2
+(I1,I2,I3) appeared 2
+***************
+*********end**********
+**********frequent Itemsets end**************
+***********printRules Begin******************
+( I1) ==> ( I2) sub(A=>B):0.5 sub(A):0.6 conf:0.833333
+( I1 I5) ==> ( I2) sub(A=>B):0.2 sub(A):0.2 conf:1
+***********printRules end*******************
+Load File Cost: 0ms
+Apriori Cost:0ms
+total Cost:0ms
+请按任意键继续. . .
